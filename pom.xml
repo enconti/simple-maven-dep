@@ -8,13 +8,31 @@
   <name>simple-maven-dep</name>
   <url>http://maven.apache.org</url>
   
-  <distributionManagement>
+  <!-- <distributionManagement>
     <repository>
         <id>central</id>
         <name>1dba89325914-releases</name>
         <url>${env.MAVEN_REPO_URL}/libs-release-local</url>
     </repository>
-  </distributionManagement>
+  </distributionManagement> -->
+
+
+<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>${env.MAVEN_REPO_URL}/maven-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>${env.MAVEN_REPO_URL}/maven-snapshots</url>
+    </snapshotRepository>
+</distributionManagement>
+
+
+
+
   
   <dependencies>
     <dependency>
