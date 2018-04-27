@@ -7,6 +7,15 @@
   <version>1.0</version>
   <name>simple-maven-dep</name>
   <url>http://maven.apache.org</url>
+  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>1dba89325914-releases</name>
+        <url>${env.MAVEN_REPO_URL}/libs-release-local</url>
+    </repository>
+  </distributionManagement>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
