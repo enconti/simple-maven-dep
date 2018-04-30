@@ -33,7 +33,7 @@ pages:
   image: busybox:latest
   stage: deploy
   dependencies:
-    - coverage
+    - deploy
   script:
     - cp -r target/surefire-reports/ public/
   artifacts:
