@@ -13,9 +13,6 @@ build:
   stage: build
   script:
     - mvn $MAVEN_CLI_OPTS compile
-  artifacts:
-    paths:
-      - target/*spring-petclinic*.jar
 
 test:
   stage: test
@@ -26,6 +23,9 @@ deploy:
   stage: deploy
   script:
     - mvn $MAVEN_CLI_OPTS deploy
+  artifacts:
+    paths:
+      - target/*simple-maven*.jar
   only:
     - master
 
