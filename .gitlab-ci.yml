@@ -41,7 +41,7 @@ pages:
     - test
   script:
     - cp -r target/surefire-reports/ public/
-    - cat "<html><body><h1>Simple Maven</h1></body></html>" > public/index.html
+    - echo "<html><body><h1>Simple Maven</h1></body></html>" > public/index.html
   artifacts:
     paths:
     - public
