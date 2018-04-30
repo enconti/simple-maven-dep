@@ -1,6 +1,6 @@
 # README
 
-## **Simple maven dependency**
+## **Simple maven**
 
 
 
