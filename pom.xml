@@ -14,8 +14,12 @@
         <name>1dba89325914-releases</name>
         <url>${env.MAVEN_REPO_URL}/libs-release-local</url>
     </repository>
-  </distributionManagement> -->
+  </distributionManagement>
+ -->
 
+<!-- <properties>
+  <env.MAVEN_REPO_URL>http://nexus:8081/repository</env.MAVEN_REPO_URL>
+</properties> -->
 
 <distributionManagement>
     <repository>
@@ -29,10 +33,6 @@
       <url>${env.MAVEN_REPO_URL}/maven-snapshots</url>
     </snapshotRepository>
 </distributionManagement>
-
-
-
-
   
   <dependencies>
     <dependency>

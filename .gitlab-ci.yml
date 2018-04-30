@@ -13,6 +13,9 @@ build:
   stage: build
   script:
     - mvn $MAVEN_CLI_OPTS compile
+  artifacts:
+    paths:
+      - target/*spring-petclinic*.jar
 
 test:
   stage: test
@@ -23,5 +26,18 @@ deploy:
   stage: deploy
   script:
     - mvn $MAVEN_CLI_OPTS deploy
+  only:
+    - master
+
+pages:
+  image: busybox:latest
+  stage: deploy
+  dependencies:
+    - coverage
+  script:
+    - cp -r target/surefire-reports/ public/
+  artifacts:
+    paths:
+    - public
   only:
     - master
