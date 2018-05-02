@@ -2,5 +2,7 @@
 
 ## **Simple maven**
 
+**_Gitlab Pages_**
+
 
 
