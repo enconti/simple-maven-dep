@@ -22,7 +22,7 @@
 </properties> -->
 
 <scm>
-   <developerConnection>scm:git:git://gitlab.com/enconti/simple-maven-dep.git</developerConnection>
+   <developerConnection>scm:git:ssh://gitlab.com/enconti/simple-maven-dep.git</developerConnection>
 </scm>
 
 
