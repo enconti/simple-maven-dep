@@ -4,7 +4,7 @@
   <groupId>com.example.dep</groupId>
   <artifactId>simple-maven-dep</artifactId>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.0-SNAPSHOT</version>
   <name>simple-maven-dep</name>
   <url>http://maven.apache.org</url>
   
@@ -20,6 +20,11 @@
 <!-- <properties>
   <env.MAVEN_REPO_URL>http://nexus:8081/repository</env.MAVEN_REPO_URL>
 </properties> -->
+
+<scm>
+   <developerConnection>scm:git:git://gitlab.com:enconti/simple-maven-dep.git</developerConnection>
+</scm>
+
 
 <distributionManagement>
     <repository>
