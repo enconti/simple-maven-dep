@@ -4,7 +4,7 @@
   <groupId>com.example.dep</groupId>
   <artifactId>simple-maven-dep</artifactId>
   <packaging>jar</packaging>
-  <version>${revision}${sha1}${changelist}</version>
+  <version>1.4.0-SNAPSHOT</version>
   <name>simple-maven-dep</name>
   <url>http://maven.apache.org</url>
   
@@ -18,10 +18,7 @@
  -->
 
 <properties>
-  <revision>1.0.0</revision>
-  <changelist>-SNAPSHOT</changelist>
-  <sha1/>
-  <env.MAVEN_REPO_URL>http://127.0.0.1:8081/repository</env.MAVEN_REPO_URL>
+  <env.MAVEN_REPO_URL>http://nexus:8081/repository</env.MAVEN_REPO_URL>
 </properties>
 
 <scm>
@@ -32,12 +29,12 @@
     <repository>
       <id>nexus</id>
       <name>Releases</name>
-      <url>${env.MAVEN_REPO_URL}/maven-releases</url>
+      <url>${env.MAVEN_REPO_URL}/maven-releases/</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Snapshot</name>
-      <url>${env.MAVEN_REPO_URL}/maven-snapshots</url>
+      <url>${env.MAVEN_REPO_URL}/maven-snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
 
@@ -47,7 +44,7 @@
       <artifactId>maven-scm-plugin</artifactId>
       <version>1.11.1</version>
       <configuration>
-          <tag>${project.artifactId}-${project.version}</tag>
+          <tag>${project.version}</tag>
       </configuration>
   </plugin>
 </plugins>  

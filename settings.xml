@@ -1,7 +1,7 @@
 <settings>
     <servers>
       <server>
-         <id>repo</id>
+         <id>nexus</id>
          <username>admin</username>
          <password>admin123</password>
       </server>
@@ -23,9 +23,9 @@
    </servers>
    <mirrors>
       <mirror>
-         <id>repo</id>
+         <id>nexus</id>
          <name>Nexus BPPJ</name>
-         <url>http://127.0.0.1:8081/repository/maven_public</url>
+         <url>http://nexus:8081/repository/maven-public/</url>
          <mirrorOf>*</mirrorOf>
       </mirror>
    </mirrors>
@@ -37,8 +37,8 @@
          <id>repos</id>
          <repositories>
             <repository>
-               <id>repo</id>
-               <url>http://127.0.0.1:8081/repository/maven-public/</url>
+               <id>nexus</id>
+               <url>http://nexus:8081/repository/maven-public/</url>
             </repository>
          </repositories>
       </profile>
