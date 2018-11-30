@@ -17,12 +17,12 @@
   </distributionManagement>
  -->
 
-<!-- <properties>
-  <env.MAVEN_REPO_URL>http://nexus:8081/repository</env.MAVEN_REPO_URL>
-</properties> -->
+<properties>
+  <env.MAVEN_REPO_URL>http://127.0.0.1:8081/repository</env.MAVEN_REPO_URL>
+</properties>
 
 <scm>
-   <developerConnection>scm:git:ssh://git@gitlab.com:/enconti/simple-maven-dep.git</developerConnection>
+   <developerConnection>scm:git:ssh://git@github.com/enconti/simple-maven-dep.git</developerConnection>
 </scm>
 
 
