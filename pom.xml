@@ -4,7 +4,7 @@
   <groupId>com.example.dep</groupId>
   <artifactId>simple-maven-dep</artifactId>
   <packaging>jar</packaging>
-  <version>1.6.0</version>
+  <version>${revision}${changelist}</version>
   <name>simple-maven-dep</name>
   <url>http://maven.apache.org</url>
   
@@ -39,7 +39,7 @@
       <id>nexus</id>
       <name>Snapshot</name>
       <url>${env.MAVEN_REPO_URL}/maven-snapshots/</url>
-    </snapshotRepository>
+    </snapshotRepository> 
 </distributionManagement>
 
 <build>
