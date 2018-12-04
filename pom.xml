@@ -4,7 +4,7 @@
   <groupId>com.example.dep</groupId>
   <artifactId>simple-maven-dep</artifactId>
   <packaging>jar</packaging>
-  <version>${revision}${changelist}</version>
+  <version>1.9-SNAPSHOT</version>
   <name>simple-maven-dep</name>
   <url>http://maven.apache.org</url>
   
@@ -18,11 +18,7 @@
  -->
 
 <properties>
-  <env.MAVEN_REPO_URL>http://nexus:8081/repository</env.MAVEN_REPO_URL>
-
-  	<revision>0.0.0</revision>
-		<changelist>-SNAPSHOT</changelist>
-		<sha1/>		
+  <env.MAVEN_REPO_URL>http://nexus:8081/repository</env.MAVEN_REPO_URL>		
 </properties>
 
 <scm>
